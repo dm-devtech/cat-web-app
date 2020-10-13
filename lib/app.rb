@@ -17,6 +17,6 @@ end
 
 get '/named-cat' do
   p params
-  @random_name = params[:name]
-  erb(:index)
+  @name = params[:name]
+  erb :form
 end
